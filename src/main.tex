@@ -1,0 +1,113 @@
+%! Author = natalia
+%! Date = 20.02.2020
+
+% Preamble
+\documentclass{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+% or Goettingen or Malmoe
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+%\usecolortheme{seahorse}
+}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+\title{Don't Be a Git, Use Git!}
+\subtitle{\tiny{(xD)}}
+\author{Natalia Maniakowska}
+\institute{skygate}
+\date{25-02-2020}
+
+\AtBeginSection[]
+{
+\begin{frame}
+    <beamer>{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+
+\beamerdefaultoverlayspecification{<+->}
+
+
+% Document
+\begin{document}
+
+
+    \frame{\titlepage}
+
+    \begin{frame}{Outline}
+        \tableofcontents
+        % You might wish to add the option [pausesections]
+    \end{frame}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Introduction}
+
+
+    \subsection{Definitions}
+
+    \begin{frame}
+        \frametitle{What is Git? What it isn't?}
+        \begin{itemize}
+            \item a \textbf{distributed version control system}
+            \item created by Linus Torvalds for development of the Linux cernel (2005!)
+            \item free, open source -- GNU General Public License
+            \item other DVCS-s: Mercurial, BitKeeper, DCVS\dots (Subversion too, but it's not distributed)
+            \item GitHub $\neq$ Git (!)
+        \end{itemize}
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{What is a distributed version control system?}
+        \begin{itemize}
+            \item \textit{distributed} -- every developer has her/his own copy
+            \item \textit{version control} -- keep track of the \textbf{changes}, revert them if needed, etc.
+            \item Joel Spolsky (in 2010): \emph{"possibly the biggest advance in software development technology in the [past] ten years"}
+
+            \footnotesize (That was actually about Mercurial, but still\dots)
+        \end{itemize}
+
+    \end{frame}
+
+
+    \begin{frame}
+        \frametitle{Git -- definitions}
+        \begin{itemize}
+            \item \textbf{repository (repo)}
+%            \footnotesize{\textbf{repozytorium} \textit{daw}. «szafa lub półka do przechowywania akt urzędowych» }
+            \item \textbf{origin}
+            \item \textbf{push}
+            \item \textbf{pull}
+        \end{itemize}
+
+    \end{frame}
+
+
+
+    \begin{frame}
+        \frametitle{And more definitions\dots}
+        \begin{itemize}
+            \item \textbf{staging area}
+            \item \textbf{commit}
+            \item \textbf{branch}
+            \item \textbf{master}
+            \item \textbf{}
+        \end{itemize}
+
+    \end{frame}
+
+
+%    \bibliography{main}
+%    \bibliographystyle{plain}
+
+\end{document}
